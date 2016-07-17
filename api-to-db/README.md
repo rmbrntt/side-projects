@@ -4,6 +4,11 @@ A simple get request to an API, response payload inserts into a sqlite db. Examp
 
 ## How to run it?
 ```
+touch token.py
+vi token.py
+add line TOKEN = "<api key>"
+Esc
+:wq
 python createdb.py
 python get-to-db.py
 ```
