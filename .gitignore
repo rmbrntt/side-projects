@@ -1,2 +1,6 @@
 *.db
 .idea
+/env
+*/env
+env
+venv
