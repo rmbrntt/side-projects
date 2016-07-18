@@ -8,7 +8,9 @@ $(function() {
         if ($('input').val() !== '') {
             var input = $("input").val()
             console.log(input)
+            $('ol').append('<li><a href="">x</a> - ' + input + '</li>');
         }
+        $('input').val('');
     });
 
     $("#form-clear").click(function(e) {
@@ -16,3 +18,8 @@ $(function() {
         $("input").val("");
     });
 });
+
+$(document).on('click', 'a', function (e) {
+    e.preventDefault();
+    $(this).parent().remove();
+})
