@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prisma Obscura</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div>
+<h1>Just the title</h1>
+</div>
+<div>
+    <span>days the time {{ current_time }}</span>
+</div>
+    {%  block content %}
+
+
+    {% endblock %}
+
+{% load staticfiles %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="{% static "main.js" %}"></script>
+</body>
+</html>
